@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Button from "./components/button";
 import ColorPicker from "./components/color-picker";
+// import Example from './components/prompt'
+import InstallPrompt from './components/install-prompt';
 
 function App() {
   const [background, setBackground] = useState("#0da2ff");
@@ -30,6 +32,7 @@ function App() {
           Change Background
         </Button>
       </ColorPicker>
+      <InstallPrompt />
     </div>
   );
 }

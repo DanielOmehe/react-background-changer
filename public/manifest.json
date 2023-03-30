@@ -3,7 +3,7 @@
   "name": "Simple react PWA",
   "icons": [
     {
-      "src": "./images/temperature-day.svg",
+      "src": "./images/temperature-night.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/svg"
     },
@@ -13,13 +13,13 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./images/temperature-night.svg",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#0da2ff",
+  "theme_color": "transparent",
   "background_color": "#b7e4e4"
 }

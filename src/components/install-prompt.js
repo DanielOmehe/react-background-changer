@@ -26,9 +26,9 @@ const InstallPrompt = () => {
   if (!supportsPWA) return null;
 
   return (
-    <Button onclick={onClick} aria-label="Install App" title="install app">
+    <button onClick={onClick} aria-label="Install App" title="install app">
       Install
-    </Button>
+    </button>
   );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import '../stylesheets/button.css'
 
 const InstallPrompt = () => {
   const [supportsPWA, setSupportsPWA] = useState(false);
@@ -12,9 +13,9 @@ const InstallPrompt = () => {
       setPromptInstall(e);
     };
 
-    window.addEventListener("beforeinstallprompt", handler);
+    window.addEventListener("beforeinstallprompt",e => handler(e));
 
-    return () => window.removeEventListener("transmissionend", handler);
+    return () => window.removeEventListener("transmissionend", (e) => handler(e));
   }, []);
 
   const onClick = (e) => {

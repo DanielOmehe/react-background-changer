@@ -3,3 +3,12 @@
     border: 1px solid #fff;
     background: transparent;
 }
+
+button{
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+}

@@ -31,8 +31,8 @@ function App() {
         <Button onclick={changeBackground}>
           Change Background
         </Button>
+        <InstallPrompt />
       </ColorPicker>
-      <InstallPrompt />
     </div>
   );
 }

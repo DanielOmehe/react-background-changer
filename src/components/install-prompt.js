@@ -13,7 +13,7 @@ const InstallPrompt = () => {
       setPromptInstall(e);
     };
 
-    window.addEventListener("beforeinstallprompt",e => handler(e));
+    window.addEventListener("beforeinstallprompt",(e) => handler(e));
 
     return () => window.removeEventListener("transmissionend", (e) => handler(e));
   }, []);
